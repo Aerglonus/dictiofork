@@ -1,0 +1,131 @@
+[{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9e9"
+  },
+  "id": 2,
+  "eng": "car",
+  "kor": "자동차",
+  "isDone": false,
+  "isMemorized": false,
+  "day": "2"
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9ea"
+  },
+  "id": 3,
+  "eng": "school",
+  "kor": "학교",
+  "isDone": false,
+  "isMemorized": false,
+  "day": "2"
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9eb"
+  },
+  "id": 4,
+  "day": "3",
+  "eng": "pencil",
+  "kor": "연필",
+  "isDone": false,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9ec"
+  },
+  "day": "5",
+  "eng": "window",
+  "kor": "창문",
+  "isDone": false,
+  "id": 5,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9ed"
+  },
+  "day": "3",
+  "eng": "house",
+  "kor": "집",
+  "isDone": false,
+  "id": 6,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9ee"
+  },
+  "day": "4",
+  "eng": "mouse (animal)",
+  "kor": "쥐",
+  "isDone": false,
+  "id": 7,
+  "isMemorized": true
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9ef"
+  },
+  "day": "4",
+  "eng": "monkey",
+  "kor": "원숭이",
+  "isDone": false,
+  "id": 8,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f0"
+  },
+  "day": "4",
+  "eng": "apple",
+  "kor": "사과",
+  "isDone": false,
+  "id": 9,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f1"
+  },
+  "day": "3",
+  "eng": "window",
+  "kor": "창문",
+  "isDone": false,
+  "id": 11,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f2"
+  },
+  "day": "1",
+  "eng": "book",
+  "kor": "책",
+  "id": 1,
+  "isDone": false,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f3"
+  },
+  "day": "1",
+  "eng": "computer",
+  "kor": "컴퓨터",
+  "id": 10,
+  "isDone": false,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f4"
+  },
+  "day": "1",
+  "eng": "house",
+  "kor": "집",
+  "id": 12,
+  "isDone": false,
+  "isMemorized": false
+},{
+  "_id": {
+    "$oid": "62caa34849e3d70aa618d9f5"
+  },
+  "day": "5",
+  "eng": "computer",
+  "kor": "컴퓨터",
+  "id": 13,
+  "isDone": false,
+  "isMemorized": false
+}]
