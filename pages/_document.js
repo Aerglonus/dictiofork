@@ -7,13 +7,13 @@ class MyDocument extends Document {
 		const initialProps = await Document.getInitialProps(ctx);
 		return {
 			...initialProps,
-			styles: React.Children.toArray([initialProps.styles]),
+			styles: <>{initialProps.styles}</>,
 		};
 	}
 
 	render() {
 		return (
-			<Html lang="en">
+			<Html>
 				<Head>{CssBaseline.flush()}</Head>
 				<body>
 					<Main />

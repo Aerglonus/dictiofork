@@ -37,6 +37,9 @@ const CreateWord = ({ days, words }) => {
 		});
 	};
 
+	/**
+	 * When the form is submitted, the data is sent to the server, and the form is reset.
+	 */
 	const submitForm = async (data, e) => {
 		e.target.reset();
 		setLoading(true);
@@ -49,16 +52,15 @@ const CreateWord = ({ days, words }) => {
 				isDone: false,
 				isMemorized: false,
 			}),
-		}).then((res) => {
-			if (res.ok) {
-				promise();
-				setLoading(false);
-				setDayState("");
-				setEnglish("");
-				setKorean("");
-				reset();
-			}
 		});
+		if (res.ok) {
+			promise();
+			setLoading(false);
+			setDayState("");
+			setEnglish("");
+			setKorean("");
+			reset();
+		}
 	};
 
 	return (
