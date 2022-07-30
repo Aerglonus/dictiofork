@@ -1,0 +1,1 @@
+## this is the data you have to add to the mongodb database each JSON file into its own collection inside the database.
