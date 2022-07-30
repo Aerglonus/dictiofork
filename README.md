@@ -1,8 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a fork of **[Binyoon99 : Korean - English Vocabulary](https://github.com/binyoon99/DictionaryWebsite)** and rebuild with **NextJs** and **MongoDB** an a mix of  **TailwindCSS** and **NextUI** for the **UI**.
 
-## Getting Started
+### ***ALL THE RIGHTS BELONG TO AND ONLY TO [github.com/binyoon99](github.com/binyoon99).***
+---
 
-First, run the development server:
+## **Getting Started**
+---
+### **Install the dependencies**
+
+```bash
+npm install
+```
+---
+### **CREATE THE ``.env`` FILE**
+This file is for the `MONGODB_URI ` and the `NEXT_PUBLIC_API_WORD_ID`
+```bash
+.
+└── .env
+```
+Inside the file add the following:
+```bash
+ #here goes your mongodb atlas URI or local mongodb URI
+MONGODB_URI=mongodb://docker:mongopw@localhost:<port> #example if you use docker mongodb.
+NEXT_PUBLIC_API_WORD_ID=http://localhost:3005/api/words?id= #variable to fetch the api dont change it.
+```
+---
+### **CREATE A DATABASE AND ADD THE DATA**
+Create a database called `dictionary` in MongoDB and create two collections one called `days` and another one called `words` inside the `DATA` folder there are two JSON files `days` and `words` add that data of those files into their respective collection.
+```
+./DATA/
+     ├── days.json
+     └── words.json
+```
+---
+### **RUN THE DEVELOPMENT SERVER:**
 
 ```bash
 npm run dev
@@ -10,25 +40,45 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3005](http://localhost:3005) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/` files. The page auto-updates as you edit the file.
+```bash
+.
+└── Pages/
+    ├── CreateWord.jsx
+    ├── DayList.jsx
+    ├── MemorizedWords.jsx
+    └── [wordsperday].jsx #this is for NextJs dynamic routing
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/words](http://localhost:3000/api/words). This endpoint can be edited in `pages/api/words.js`.
+
+```bash
+.
+└── Pages/
+    └── api/
+        └── words.js
+```
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+Change to your own risk the `mongodb.js` this file is where the database connection is made only change it if you know what are you doing.
+```bash
+.
+└── lib/
+    └── mongodb.js
+```
 
-To learn more about Next.js, take a look at the following resources:
+### **TO-DO:**
+- [ ] DELETE a word when Done is set to true
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Add a day
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [ ] DELETE a day
 
-## Deploy on Vercel
+- [ ] Modify a word
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
